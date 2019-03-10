@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="in1" type="text" value="">
+<select name="op" id="op">
+    <option value="北京">北京</option>
+    <option value="上海">上海</option>
+    <option value="杭州">杭州</option>
+</select>
+<button onclick="otj()">
+    提交
+</button>
+<script>
+    var oIn=document.getElementById('in1');
+    var op=document.getElementById('op');
+    function otj() {
+        var oText=oIn.value;
+        var oSe=op.value;
+        alert(oText+'在'+oSe);
+    }
+</script>
+</body>
+</html>

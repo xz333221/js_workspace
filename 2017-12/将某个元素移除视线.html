@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        #div1{
+            margin:20px;
+        }
+        button{
+            position: relative;
+        }
+        ul{
+            /*visibility: hidden;*/
+            display: none;
+            border: 1px solid black;
+            list-style: none;
+            width: 100px;
+            text-align: center;
+        }
+        li{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <button id="hello">hello</button>
+    <ul id="ul1">
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+</div>
+
+    <script>
+        var h = document.getElementById('hello');
+        var l = document.getElementsByTagName('li');
+        var u=document.getElementById('ul1');
+        var oDiv=document.getElementById('div1');
+        oDiv.onmouseover=show;
+        oDiv.onmouseout=hide;
+        function hide() {
+            u.style.display='none';
+        }
+        function show() {
+            u.style.display='block';
+        }
+//        h.onclick=aaa;
+//        function aaa() {
+//            alert(111)
+//        }
+//        h.onmouseover=function () {
+//            h.style.background='yellow';
+//            for (var i=0;i<l.length;i++){
+//                l[i].style.display='block';
+//            }
+//        }
+
+//        l.onmouseover=function () {
+//
+//        }
+    </script>
+</body>
+</html>

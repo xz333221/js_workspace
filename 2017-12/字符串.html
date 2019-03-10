@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var str='hello32123123123123'
+    var arr=[3,2,1]
+    var arr2=[
+            {name:'aa',age:18},
+            {name:'bb',age:20},
+        ]
+    var json={
+        name:'hello',
+        age:18
+    }
+    console.group('lll');
+    console.log(str.substring(3,2))
+    console.log(str.substring(3))
+    console.dir(str.indexOf('l'))// 数组indexof
+    console.log(str.indexOf('l'))// 数组indexof
+    console.table(str)
+    console.table(arr)
+    console.table(arr2)
+    console.table(json)
+    console.dir(str)
+    console.dir(arr)
+    console.dir(arr2)
+    console.dir(json)
+    console.log(str)
+    console.log(arr)
+    console.log(arr2)
+    console.log(json)
+
+    var a=333+undefined
+    console.log(a);
+    var b='333'+undefined
+    console.log(b);
+    // var c='333'+d
+    // console.log(c);
+
+    var person = {
+        name: '小明',
+        age: 20,
+        gender: 'male',
+        passport: 'G-12345678',
+        school: 'No.4 middle school',
+        address: {
+            city: 'Beijing',
+            street: 'No.1 Road',
+            zipcode: '100001'
+        }
+    };
+    var {name, address: {city, zip}} = person;
+    console.log(name);
+    var x=1, y=2;
+    [x, y] = [y, x]
+    console.log(x);
+    var {hostname:domain, pathname:path} = location;
+    console.table(location);
+
+
+</script>
+</html>
